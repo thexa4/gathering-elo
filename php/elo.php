@@ -34,9 +34,9 @@ class ELOMatch
     return 1500;
   }
   
-  public int getELOChange($name)
+  public function getELOChange($name)
   {
-    for ($this->players as $p)
+    foreach ($this->players as $p)
     {
       if ($p->name == $name)
         return $p->eloChange;
