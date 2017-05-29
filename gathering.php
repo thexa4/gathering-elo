@@ -42,6 +42,9 @@ match(array("Matthijs", "Nicolaas", array("Wouter", "Max"), "Joris"));
 match(array("Joris", "Max", "Nicolaas", "Wouter", "Matthijs"));
 match(array("Wouter", "Nicolaas", "Joris", "Max"));
 
+# 30-05-17 - Sonar
+match(array("Nicolaas", "Joris"), array("Max", "Wouter"));
+
 arsort($players);
 foreach($players as $name => $elo) {
 	echo("$name => $elo\n");
