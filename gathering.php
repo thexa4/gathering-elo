@@ -34,7 +34,7 @@ function match($order) {
 		$players[$name] = $match->getELO($name);
 	}
 }
-# match with array from lowest to highest
+# match with array from highest to lowest
 # ? - Seven Wonders
 match(array("Matthijs", "Nicolaas", array("Wouter", "Max"), "Joris"));
 
@@ -46,12 +46,12 @@ match(array("Wouter", "Nicolaas", "Joris", "Max"));
 match(array("Nicolaas", "Joris"), array("Max", "Wouter"));
 
 # 05-05-17 - Sonar
-match(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"));
+match(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"),);
 match(array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
 
 
 # 12/06/17 - Love letter
-match(array("Wouter", "Nicolaas", array("Joris", "Matthijs"), "Max"));
+match(array("Max", array("Joris", "Matthijs"), "Nicolaas", "Wouter"));
 
 arsort($players);
 foreach($players as $name => $elo) {
