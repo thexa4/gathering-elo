@@ -46,7 +46,7 @@ match(array("Wouter", "Nicolaas", "Joris", "Max"));
 match(array("Nicolaas", "Joris"), array("Max", "Wouter"));
 
 # 05-05-17 - Sonar
-match(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"),);
+match(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"));
 match(array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
 
 
