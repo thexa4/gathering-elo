@@ -9,7 +9,7 @@ $players = array(
 	"Wouter" => 1500
 );
 
-function match($order) {
+function match($game, $order) {
 	global $players;
 	$match = new ELOMatch();
 
@@ -36,22 +36,21 @@ function match($order) {
 }
 # match with array from highest to lowest
 # ? - Seven Wonders
-match(array("Matthijs", "Nicolaas", array("Wouter", "Max"), "Joris"));
+match("Seven Wonders", array("Matthijs", "Nicolaas", array("Wouter", "Max"), "Joris"));
 
 # 13-02-17 - Seven Wonders
-match(array("Joris", "Max", "Nicolaas", "Wouter", "Matthijs"));
-match(array("Wouter", "Nicolaas", "Joris", "Max"));
+match("Seven Wonders", array("Joris", "Max", "Nicolaas", "Wouter", "Matthijs"));
+match("Seven Wonders", array("Wouter", "Nicolaas", "Joris", "Max"));
 
 # 30-05-17 - Sonar
-match(array("Nicolaas", "Joris"), array("Max", "Wouter"));
+match("Sonar", array("Nicolaas", "Joris"), array("Max", "Wouter"));
 
 # 05-05-17 - Sonar
-match(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"));
-match(array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
-
+match("Sonar", array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"));
+match("Sonar", array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
 
 # 12/06/17 - Love letter
-match(array("Max", array("Joris", "Matthijs"), "Nicolaas", "Wouter"));
+match("Love Letter", array("Max", array("Joris", "Matthijs"), "Nicolaas", "Wouter"));
 
 arsort($players);
 foreach($players as $name => $elo) {
