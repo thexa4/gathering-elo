@@ -43,17 +43,17 @@ match("Seven Wonders", array("Joris", "Max", "Nicolaas", "Wouter", "Matthijs"));
 match("Seven Wonders", array("Wouter", "Nicolaas", "Joris", "Max"));
 
 # 30-05-17 - Sonar
-match("Sonar", array("Nicolaas", "Joris"), array("Max", "Wouter"));
+match("Sonar", array(array("Nicolaas", "Joris"), array("Max", "Wouter")));
 
 # 05-05-17 - Sonar
-match("Sonar", array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter"));
-match("Sonar", array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
+match("Sonar", array(array("Max", "Matthijs", "Joris"), array("Nicolaas", "Wouter")));
+match("Sonar", array(array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris")));
 
 # 12/06/17 - Love letter
 match("Love Letter", array("Max", array("Joris", "Matthijs"), "Nicolaas", "Wouter"));
 
 # 19-06-17 - Sonar
-match("Sonar", array("Max", "Matthijs"), array("Nicolaas", "Wouter", "Joris"));
+match("Sonar", array(array("Max", "Matthijs"), array("Nicolaas", "Wouter", "Joris")));
 
 arsort($players);
 foreach($players as $name => $elo) {
