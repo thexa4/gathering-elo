@@ -52,6 +52,9 @@ match("Sonar", array("Nicolaas", "Wouter"), array("Max", "Matthijs", "Joris"));
 # 12/06/17 - Love letter
 match("Love Letter", array("Max", array("Joris", "Matthijs"), "Nicolaas", "Wouter"));
 
+# 19-06-17 - Sonar
+match("Sonar", array("Max", "Matthijs"), array("Nicolaas", "Wouter", "Joris"));
+
 arsort($players);
 foreach($players as $name => $elo) {
 	echo("$name => $elo\n");
