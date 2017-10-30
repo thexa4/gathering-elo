@@ -56,6 +56,12 @@ match("Love Letter", array("Max", array("Joris", "Matthijs"), "Nicolaas", "Woute
 match("Sonar", array(array("Max", "Matthijs"), array("Nicolaas", "Wouter", "Joris")));
 match("Sonar", array(array("Nicolaas", "Wouter", "Joris"), array("Max", "Matthijs")));
 
+#?
+match("Caverna", array("Matthijs", "Nicolaas", "Wouter", "Max", "Joris"));
+
+# 30 oct
+match("Calimala", array("Max", "Matthijs", "Joris", "Wouter", "Nicolaas"));
+
 arsort($players);
 foreach($players as $name => $elo) {
 	echo("$name => $elo\n");
