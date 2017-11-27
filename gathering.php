@@ -65,6 +65,9 @@ match("Calimala", array("Max", "Matthijs", "Joris", "Wouter", "Nicolaas"));
 # 07-11-17 Evolution: Climate
 match("Evolution", array("Wouter", array("Joris", "Nicolaas")));
 
+# 28-11-17 Evolution: Climate
+match("Evolution", array("Max", "Matthijs", "Wouter", "Nicolaas", "Joris"));
+
 arsort($players);
 foreach($players as $name => $elo) {
 	echo("$name => $elo\n");
