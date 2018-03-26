@@ -72,11 +72,11 @@ match("Evolution", array("Max", "Matthijs", "Wouter", "Nicolaas", "Joris"));
 match("Evolution", array("Wouter", "Max", array("Matthijs", "Joris"), "Nicolaas"));
 
 # 12-03-18 Caverna
-match("Caverna", array("Nicolaas", "Matthijs", "Joris", "Wouter", );
+match("Caverna", array("Nicolaas", "Matthijs", "Joris", "Wouter", ));
 
 # 26-03-18 Red Dragon Inn
-match("Red Dragon Inn", array("Wouter", "Max", "Nicolaas", "Joris", "Matthijs");
-match("Red Dragon Inn", array("Matthijs", "Nicolaas", "Max", "Wouter", "Joris");
+match("Red Dragon Inn", array("Wouter", "Max", "Nicolaas", "Joris", "Matthijs"));
+match("Red Dragon Inn", array("Matthijs", "Nicolaas", "Max", "Wouter", "Joris"));
 
 arsort($players);
 foreach($players as $name => $elo) {
