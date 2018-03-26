@@ -65,6 +65,12 @@ match("Calimala", array("Max", "Matthijs", "Joris", "Wouter", "Nicolaas"));
 # 07-11-17 Evolution: Climate
 match("Evolution", array("Wouter", array("Joris", "Nicolaas")));
 
+# 28-11-17 Evolution: Climate
+match("Evolution", array("Max", "Matthijs", "Wouter", "Nicolaas", "Joris"));
+
+# 11-12-17 Evolution: Climate
+match("Evolution", array("Wouter", "Max", array("Matthijs", "Joris"), "Nicolaas"));
+
 # 12-03-18 Caverna
 match("Caverna", array("Nicolaas", "Matthijs", "Joris", "Wouter", )
 
