@@ -84,6 +84,9 @@ match("Evolution", array("Max", "Joris", "Nicolaas", "Wouter", "Matthijs"));
 # 20-05-19 Carcassonne
 match("Carcassonne", array("Nicolaas", "Joris", "Matthijs", "Wouter"));
 
+# 01-07-19 Evolution: Climate
+match("Evolution", array("Matthijs", "Joris", "Wouter", "Max", "Nicolaas"));
+
 arsort($players);
 foreach($players as $name => $elo) {
 	echo("$name => $elo\n");
