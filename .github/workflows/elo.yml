@@ -16,8 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: nanasess/setup-php@master
-      with:
-        php-version: '7.4'
+    
+    - run: sudo apt update
+    - run: sudo apt install -y php
 
     - run: php ./gathering.php
